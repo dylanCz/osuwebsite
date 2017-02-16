@@ -1,0 +1,67 @@
+{% extends 'base/index.html' %}
+{% load static %}
+
+{% block style %}
+<style>
+  body {
+    background: url({% static "/images/drygatelowsat.jpg" %});
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div>
+  <h1>Game Settings</h1>
+  <ul>
+    <li>Mode: Stock</li>
+    <li>Stocks: 4 stocks</li>
+    <li>Time Limit: 8:00 minutes</li>
+    <li>Handicap: OFF</li>
+    <li>Team Attack / Friendly Fire: On</li>
+    <li>Damage Ratio: 100%</li>
+    <li>Items: OFF and/or NONE</li>
+    <li>Pause: OFF</li>
+    <li>All Characters Available</li>
+    <li>Singles: All sets are best-of-3 until the top 32, where sets are best-of-5</li>
+    <li>Doubles: All sets are best-of-3 until the top 8, where sets are best-of-5</li>
+  </ul>
+  <br>
+
+  <h1>Set Procedure</h1>
+  <ul style="list-style-type:decimal">
+    <li>Players select characters or Double Blind Character Select</li>
+    <li>Use Stage Striking to determine the first stage</li>
+    <li>Players play the first game of the set</li>
+    <li>Winning player of the preceding match bans a stage/stages</li>
+    <li>Losing player of the preceding match counterpicks a stage</li>
+    <li>Winning player of the preceding match may change characters</li>
+    <li>Losing player of the preceding match may change characters</li>
+    <li>Players play the next game of the set</li>
+    <li>Repeat Steps 4 through 8 for all subsequent games</li>
+  </ul>
+  <br>
+
+  <h1>Stagelist</h1>
+  <h3>Singles</h3>
+  <ul>
+    <li>Battlefield</li>
+    <li>Yoshi's Story</li>
+    <li>Dreamland</li>
+    <li>Final Destination</li>
+    <li>Fountain of Dreams</li>
+    <li>Pokémon Stadium (Counterpick)</li>
+  </ul>
+  <br>
+
+  <h3>Doubles</h3>
+  <ul>
+    <li>Battlefield</li>
+    <li>Yoshi's Story</li>
+    <li>Dreamland</li>
+    <li>Final Destination</li>
+    <li>Pokémon Stadium</li>
+  </ul>
+</div>
+
+{% endblock %}

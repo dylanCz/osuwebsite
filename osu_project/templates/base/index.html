@@ -1,0 +1,40 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>SmashHeart</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
+    <script src="{% static "js/bootstrap.js" %}"</script>
+    <script src="{% static "js/bootstrap.min.js" %}"</script>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    {% block style %}  {% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="nav">
+          <ul id="menu">
+            <li><a href="/">Smash Heart!</a></li>
+            <li><a href="/location/">Find Drygate</a></li>
+            <li><a href="/menus/">Food and Drinks</a></li>
+            <li><a href="/schedule/">Schedule</a></li>
+            <li><a href="/rules/">Rules</a></li>
+            <li><a href="/registration/">Registration</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="row" id="wrapper">
+      {% block body %}  {% endblock %}
+    </div>
+
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

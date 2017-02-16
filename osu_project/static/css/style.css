@@ -1,0 +1,39 @@
+header {
+  height: 50px;
+  /*background-color: #fff;*/
+  /*background-color: rgba( 255, 255, 255, 0.8);*/
+  background-color: rgba(138,110,100, 0.5);
+  text-align: center;
+}
+
+ul#menu li {
+  display: inline;
+}
+
+ul#menu li  a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'ealing_otblack', 'Trebuchet MS', Arial, sans-serif;
+  font-size: 18px;
+  color: #FFF;
+  padding: 0 8px;
+  line-height: 50px;
+}
+
+ul#menu li {
+    display:inline;
+}
+
+
+#wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  /*background-color: rgba(138,100,100,0.8);*/
+  padding: 10px;
+  color: #FFF;
+}
+
+#map {
+ height: 400px;
+ width: 100%;
+}
