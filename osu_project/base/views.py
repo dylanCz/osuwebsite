@@ -14,20 +14,17 @@ def index(request):
 
     return render(request, 'base/homepage.html', context_dict)
 
-def location(request):
-    return render(request, 'base/location.html')
+def about(request):
+    return render(request, 'base/about.html')
 
-def menus(request):
-    return render(request, 'base/menus.html')
-
-def schedule(request):
-    return render(request, 'base/schedule.html')
+def events(request):
+    return render(request, 'base/events.html')
 
 def rules(request):
     return render(request, 'base/rules.html')
 
-def registration(request):
-    return render(request, 'base/registration.html')
+def partners(request):
+    return render(request, 'base/partners.html')
 
 def contact(request):
     return render(request, 'base/contact.html')

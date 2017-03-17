@@ -1,0 +1,60 @@
+.maintext {
+  padding: 20px;
+  text-align: center;
+}
+
+#teambox {
+  background-color: white;
+  border-radius: 25px;
+  /*border: 2px solid;*/
+  width: 940px;
+  height: 160px;
+  padding: 15px;
+  margin: 25px;
+  text-align: center;
+}
+
+#teamtitle {
+  font-size: 24;
+  font-weight: bold;
+}
+
+.playerboxes {
+  background-color: white;
+  border-radius: 20px;
+  /*border: 2px solid;*/
+  width: 420px;
+  height: 175px;
+  padding: 25px;
+  margin: 10px;
+  position: relative;
+}
+
+.playertitle {
+  font-size: 18;
+  font-weight: bold;
+  /*text-align: right;*/
+}
+
+.playerroles {
+  /*text-align: right;*/
+  font-style: italic;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.playerdesc {
+  padding: 20px;
+}
+
+.playerpics {
+  z-index: -1;
+  height: 120px;
+  width: 120px;
+}
+
+.playerstocks {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}

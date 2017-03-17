@@ -3,10 +3,9 @@ from base import views
 
 urlpatterns = [
         url(r'^$', views.index, name='homepage'),
-        url(r'^location/', views.location, name='location'),
-        url(r'^menus/', views.menus, name='menus'),
-        url(r'^schedule/', views.schedule, name='schedule'),
+        url(r'^about/', views.about, name='about'),
+        url(r'^events/', views.events, name='events'),
         url(r'^rules/', views.rules, name='rules'),
-        url(r'^registration/', views.registration, name='registration'),
+        url(r'^partners/', views.partners, name='partners'),
         url(r'^contact/', views.contact, name='contact')
 ]

@@ -2,66 +2,96 @@
 {% load static %}
 
 {% block style %}
-<style>
-  body {
-    background: url({% static "/images/drygatelowsat.jpg" %});
-  }
-</style>
+
 {% endblock %}
 
 {% block body %}
 
 <div>
-  <h1>Game Settings</h1>
-  <ul>
-    <li>Mode: Stock</li>
-    <li>Stocks: 4 stocks</li>
-    <li>Time Limit: 8:00 minutes</li>
-    <li>Handicap: OFF</li>
-    <li>Team Attack / Friendly Fire: On</li>
-    <li>Damage Ratio: 100%</li>
-    <li>Items: OFF and/or NONE</li>
-    <li>Pause: OFF</li>
-    <li>All Characters Available</li>
-    <li>Singles: All sets are best-of-3 until the top 32, where sets are best-of-5</li>
-    <li>Doubles: All sets are best-of-3 until the top 8, where sets are best-of-5</li>
-  </ul>
-  <br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Game Settings</h1>
+      <ul>
+        <li>Mode: Stock</li>
+        <li>Stocks: 4 stocks</li>
+        <li>Time Limit: 8:00 minutes</li>
+        <li>Handicap: OFF</li>
+        <li>Team Attack / Friendly Fire: On</li>
+        <li>Damage Ratio: 100%</li>
+        <li>Items: OFF and/or NONE</li>
+        <li>Pause: OFF</li>
+        <li>All Characters Available</li>
+        <li>Singles: All sets are best-of-3 until top 32, where sets are best-of-5</li>
+        <li>Doubles: All sets are best-of-3 until top 8, where sets are best-of-5</li>
+      </ul>
+      <br>
+    </div>
 
-  <h1>Set Procedure</h1>
-  <ul style="list-style-type:decimal">
-    <li>Players select characters or Double Blind Character Select</li>
-    <li>Use Stage Striking to determine the first stage</li>
-    <li>Players play the first game of the set</li>
-    <li>Winning player of the preceding match bans a stage/stages</li>
-    <li>Losing player of the preceding match counterpicks a stage</li>
-    <li>Winning player of the preceding match may change characters</li>
-    <li>Losing player of the preceding match may change characters</li>
-    <li>Players play the next game of the set</li>
-    <li>Repeat Steps 4 through 8 for all subsequent games</li>
-  </ul>
-  <br>
+    <div class="col-sm-6">
+      <h1>Set Procedure</h1>
+      <ul style="list-style-type:decimal">
+        <li>Players select characters or Double Blind Character Select</li>
+        <li>Use 1-2-1 Stage Striking to determine the first stage</li>
+        <li>Players play the first game of the set</li>
+        <li>Winning player of the preceding match bans a stage/stages</li>
+        <li>Losing player of the preceding match counterpicks a stage</li>
+        <li>Winning player of the preceding match may change characters</li>
+        <li>Losing player of the preceding match may change characters</li>
+        <li>Players play the next game of the set</li>
+        <li>Repeat Steps 4 through 8 for all subsequent games</li>
+      </ul>
+      <br>
+    </div>
+  </div>
 
   <h1>Stagelist</h1>
-  <h3>Singles</h3>
-  <ul>
+  <center><h3>Singles</h3></center>
+  <!-- <ul>
     <li>Battlefield</li>
     <li>Yoshi's Story</li>
     <li>Dreamland</li>
     <li>Final Destination</li>
     <li>Fountain of Dreams</li>
     <li>Pokémon Stadium (Counterpick)</li>
-  </ul>
+  </ul> -->
+  <div class="row">
+    <div class="col-md-2 ">
+      <img src="{% static "/images/stages/battlefield.jpg" %}" alt="Battlefield" style="width:150px;height:112px;">
+    </div>
+    <div class="col-md-2">
+      <img src="{% static "/images/stages/yoshis.PNG" %}" alt="Yoshi's Story" style="width:150px;height:112px;">
+    </div>
+    <div class="col-md-2">
+      <img src="{% static "/images/stages/dreamland.png" %}" alt="Dreamland" style="width:150px;height:112px;">
+    </div>
+    <div class="col-md-2">
+      <img src="{% static "/images/stages/fd.jpg" %}" alt="Final Destination" style="width:150px;height:112px;">
+    </div>
+    <div class="col-md-2">
+      <img src="{% static "/images/stages/fountain.jpg" %}" alt="Fountain of Dreams" style="width:150px;height:112px;">
+    </div>
+    <div class="col-md-2">
+      <img src="{% static "/images/stages/pokemon.jpg" %}" alt="Pokemon Stadium" style="width:150px;height:112px;">
+    </div>
+  </div>
   <br>
 
-  <h3>Doubles</h3>
-  <ul>
-    <li>Battlefield</li>
-    <li>Yoshi's Story</li>
-    <li>Dreamland</li>
-    <li>Final Destination</li>
-    <li>Pokémon Stadium</li>
-  </ul>
+  <center><h3>Doubles</h3><center>
+  <div class="col-md-2 col-md-offset-1">
+    <img src="{% static "/images/stages/battlefield.jpg" %}" alt="Battlefield" style="width:150px;height:112px;">
+  </div>
+  <div class="col-md-2">
+    <img src="{% static "/images/stages/yoshis.PNG" %}" alt="Yoshi's Story" style="width:150px;height:112px;">
+  </div>
+  <div class="col-md-2">
+    <img src="{% static "/images/stages/dreamland.png" %}" alt="Dreamland" style="width:150px;height:112px;">
+  </div>
+  <div class="col-md-2">
+    <img src="{% static "/images/stages/fd.jpg" %}" alt="Final Destination" style="width:150px;height:112px;">
+  </div>
+  <div class="col-md-2">
+    <img src="{% static "/images/stages/pokemon.jpg" %}" alt="Pokemon Stadium" style="width:150px;height:112px;">
+  </div>
 </div>
 
 {% endblock %}

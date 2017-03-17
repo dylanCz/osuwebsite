@@ -1,9 +1,18 @@
+#wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color: #00a3ff;
+  padding: 10px;
+  color: #000;
+}
+
 header {
   height: 50px;
   /*background-color: #fff;*/
   /*background-color: rgba( 255, 255, 255, 0.8);*/
   background-color: rgba(138,110,100, 0.5);
   text-align: center;
+  font-family: monospace;
 }
 
 ul#menu li {
@@ -24,16 +33,6 @@ ul#menu li {
     display:inline;
 }
 
-
-#wrapper {
-  max-width: 1020px;
-  margin: 0 auto;
-  /*background-color: rgba(138,100,100,0.8);*/
-  padding: 10px;
-  color: #FFF;
-}
-
-#map {
- height: 400px;
- width: 100%;
+body{
+  background-color: #00a3ff;
 }
